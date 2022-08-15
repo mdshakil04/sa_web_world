@@ -1,9 +1,19 @@
-/* fonts  */
+/* ----------------
+fonts  
+------------------*/
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-/* Common styles or utilitis  */
+/*---------- ----------------
+Common styles or utilitis 
+---------------------------- */
 body{
     font-family: 'Poppins', sans-serif;
     background: #d9eefa;
+}
+main{
+    width: 1020px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding-right: 150px;   
 }
 a{
     text-decoration: none;
@@ -16,11 +26,9 @@ a{
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.333);
 }
-main{
-    display: flex;
-    justify-content: center;
-}
-/* Top services style  */
+/*-------------------
+ Top services style 
+ ------------------ */
 .top-instructors{
     /* padding: 30px; */
 }
@@ -43,11 +51,12 @@ main{
 .instructor-name{
     margin-left: 16px;
 }
-
 hr{
     margin-top: 30px;
 }
-/* service styles */
+/*-------------------
+ service styles 
+ --------------------*/
 .services{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -55,7 +64,6 @@ hr{
 .service{
     display: flex;
     align-items: center;
-    /* padding: 30px; */
     padding-bottom: 30px;
 }
 .service img{
@@ -68,3 +76,46 @@ hr{
 span{
    color: #562EFF; 
 }
+/*--------------------
+ courses style  
+ ---------------------*/
+.top-courses{
+    justify-content: center;
+    margin-top: 30px;
+    width: 1080px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.333);
+    height: 100%;
+}
+.course{
+    height: 300px;
+    width: 300px;
+    margin-right: 150px;
+    /* border: 1px solid aqua; */
+    /* border-radius: 12px; */
+}
+.course img{
+    width: 224px;
+    height: 104px;
+}
+.course-container{ 
+    display: flex;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+/* ------------------
+Media Queries
+------------------ */
+/* 
+Mobile Device
+ */
+ @media only screen and (max-width:688px) {
+    .instructors{
+        /* background-color: #562EFF; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+ }
